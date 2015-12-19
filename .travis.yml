@@ -1,0 +1,14 @@
+script: bash ./deploy.sh
+env:
+  global:
+  - GH_REF: github.com/alexkonrad/asteroids.git
+  - secure: "IRwDc+yoI2aRa/V0n2jRIea5opyDhuh1NKFuVPtu0vgF9Zpf3Oh6kemZKpLKeJqmu0lbEhyfr8Nwsg8RfeSVBNoeV/bign+QBsGEtTD6VGtejzHkScFWqCrRNggA9vGexZOaKSDuJA0pLt8TjAEXIqpmpKtLd50gLE9hy1/3LgqlCcJz1T/rVHwZ+1t/eU2XQp/69YTzRqPCgSq4lbAUsW+AfNeMPU9KYfHWf532aRzMgWl1uSyLCQHcSl0gs89VvQPPcm+QimwVAdLXb2glTCu6DO8kIAukXj0WbtS/Olzjh6wrDCaTZ32xCK9rlwip2C0NR49LJrFjpwyAgLJZ40m8dEvjhllIaMdLlXN8779mzLtumPXT8CPYUSDeYG7/nsJjqrElxAWvmrx2snCMQfmHAf3nNeLNjLNI+Om4dpZnVQXUcEKlSbZ51gkk9MUYBSEXBvf3UJaQm4YsQGjcBSQG3cc//arkU/U/l3MMfMk2XbMKHvaiyIiMkUECdG4zdj9aRtqZxKVmiGNCCXt+uY6YCYLzJDKULbJTZvxnSZz/brdi4OXhsp+Kuap1ZlYAiTHlHa7BqxqbrqIttYr+W5EyQTUad2IxpSzje9myfdRQbrYDIlRHbzlbppU+NOWBgq3Ea0bpO8hw7LtcwUjI1yDhAsu6jNIEWMeBRSIy0C4="
+language: node_js
+sudo: false
+node_js:
+  - "5.0"
+install:
+  - npm install
+cache:
+  directories:
+    - node_modules
